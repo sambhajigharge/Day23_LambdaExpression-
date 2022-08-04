@@ -13,4 +13,12 @@ public class ExceptionUserRegistration {
         return matcher.matches();
     }
 
+    public boolean lastName(String lastName) {
+        regex = "^[A-Z]{1}[a-z]{2,}$";
+        Pattern pattern = Pattern.compile(regex);
+        Matcher matcher = pattern.matcher(lastName);
+        return matcher.matches();
+    }
 }
+
+

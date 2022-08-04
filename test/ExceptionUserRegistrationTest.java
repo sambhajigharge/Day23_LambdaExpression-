@@ -20,4 +20,16 @@ public class ExceptionUserRegistrationTest {
         Assert.assertEquals(false, actualResult);
     }
 
+    @Test
+    public void givenLastName_IsProper_ReturnTrue() {
+        boolean actualResult = exceptionUserRegistration.firstName("Mane");
+        Assert.assertEquals(true, actualResult);
+    }
+
+    @Test
+    public void givenLastName_IsProper_ReturnFalse() {
+        boolean actualResult = exceptionUserRegistration.firstName("Mane");
+        Assert.assertEquals(false, actualResult);
+    }
+
 }
