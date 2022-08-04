@@ -55,5 +55,4 @@ public class ExceptionUserRegistrationTest {
         boolean actualResult = exceptionUserRegistration.emailId("manepriyanka2014@gmail.com");
         Assert.assertEquals(false, actualResult);
     }
-
 }
