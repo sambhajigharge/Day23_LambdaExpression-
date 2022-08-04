@@ -16,7 +16,7 @@ public class MoodAnalyserTest {
     }
 
     @Test
-    public void givenEmail2_WhenNotProper_ReturnEntryFailed() {
+    public void givenEmailId_WhenNotProper_ReturnEntryFailed() {
         String actualResult = moodAnalyser.analyseMood("User is Sad");
         Assert.assertEquals("Entry Failed", actualResult);
     }
